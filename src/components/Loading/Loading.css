@@ -1,0 +1,16 @@
+.loading {
+  width: 100%;
+  font-size: 3rem;
+  margin: 300px auto 0;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
