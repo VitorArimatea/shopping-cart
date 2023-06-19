@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   background-color: blue;
+  z-index: 1;
 }
 
 .header > div {
