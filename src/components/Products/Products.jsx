@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 import './Products.css';
 
@@ -11,11 +11,10 @@ import ShoppingContext from '../../context/ShoppingContext';
 
 function Products() {
 
-  const {products, setProducts} = useContext(ShoppingContext);
-  const [loading, setLoading] = useState(true);
+  const {products, setProducts, loading, setLoading} = useContext(ShoppingContext);
 
   useEffect(() => {
-    fetchProducts('pc gamer').then((response) => {
+    fetchProducts('').then((response) => {
       setProducts(response);
       setLoading(false);
     });
