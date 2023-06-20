@@ -9,17 +9,17 @@ import ShoppingContext from '../../context/ShoppingContext';
 
 function SearchBar() {
   
-  const { setProducts } = useContext(ShoppingContext);
+  const { setProducts, setLoading } = useContext(ShoppingContext);
   const [searchValue, setSearchValue] = useState(''); 
 
 
   const handleSearch = async (event) => {
     event.preventDefault();
-    
+    setLoading(true);
     const products = await fetchProducts(searchValue);
     
     setProducts(products);
-
+    setLoading(false);
     setSearchValue('');
   };
 
