@@ -2,7 +2,13 @@
 
 <h2 align="center">Versão Desktop</h2>
 
+  <h3 align="center">Resultado da pesquisa</h3>
+
   <img alt="Preview" src=".github/preview.png" width="100%">
+
+  <h3 align="center">Carrinho de compras aberto</h3>
+  
+  <img alt="Preview" src=".github/preview-2.png" width="100%">
 
 #
 
